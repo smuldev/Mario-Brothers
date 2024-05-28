@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/icons8-super-mario-isometric-96.png" type="image/x-icon">
+    
+    <title>Mario Bros</title>
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="./img/Logo Mario.png" alt="Pequena logo do mario">
+        <a>Home</a>
+        <a>Nossos Servicos</a>
+        <a>Fale Conosco</a>
+    </div>
+
+
+    <div class="caixa-mae">
+        <div class="caixa-principal">
+            <img src="./img/Logo.png" alt="Logo do Mario Bros" class="logo-mario">
+            <p>🔧Desentupimento é com a dupla imbatível: Mario e Luigi!🔧</p>
+            <p> Seus problemas de encanamento estão prestes a se tornar uma aventura épica! De canos
+                entupidos a vazamentos desafiadores, esses encanadores lendários estão prontos para consertar tudo para
+                você. Deslize pelo
+                nosso
+                site e
+                deixe Mario e Luigi levarem seu encanamento para o próximo nível!</p>
+
+            <button class="botao-entre-contato" onclick="abrirForm()" >ENTRE EM CONTATO</button>
+        </div>
+
+        <div>
+            <img src="./img/Mario.png" alt="Mario Bros" class="mario-bros">
+        </div>
+    </div>
+
+
+    <div class="caixa-video">
+        <video src="./img/Video Mario.mp4" autoplay muted loop></video>
+        <div class="mascara"></div>
+    </div>
+
+    <a href="https://api.whatsapp.com/send?phone=5516039102391&text=Ola,%20preciso%20de%20ajuda!" class="link-whatsapp">
+        <img src="./img/whatsapp.png" alt="link para o whatsapp">
+    </a>
+
+    <form 
+        class="formulario-fale-conosco"
+        action="https://formcarry.com/s/ypo81ueGtqv"
+        method="POST"
+        enctype="multipart/form-data">
+            <h1 class="fechar" onclick="esconderForm()">❌</h1>
+            <input placeholder="Nome Sobrenome" type="text" name="Nome">
+            <input placeholder="Seu Telefone" type="tel" name="Telefone">
+            <textarea placeholder="Descreva o problema..." name="Problema"></textarea>
+            <button class="orcamento" type="submit">ENVIAR PROBLEMA</button>
+
+    </form>
+
+    <div class="mascara-formulario" onclick="esconderForm()"></div>
+
+</body>
+<script src="scripts.js"></script>
+
+</html>
